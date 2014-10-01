@@ -22,9 +22,9 @@
 				<nav class="nav-global">
 					<ul>
 						<li class="inicio"><a href="/">inicio</a></li>
-						<li class="archive"><a href="/archive.html">archivo</a></li>
-						<li class="page"><a href="/pages.html">paginas</a></li>
-						<li class="category"><a href="/categories.html">categorias</a></li>
+						<li class="archive"><a href="/archive.html">archive</a></li>
+						<li class="page"><a href="/pages.html">pages</a></li>
+						<li class="category"><a href="/categories.html">categories</a></li>
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->
