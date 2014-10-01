@@ -7,5 +7,4 @@ tags: [inicio, entrada, prueba]
 ---
 {% include JB/setup %}
 
-#Primera entrada
 Esta es la primera entrada de mi blog
