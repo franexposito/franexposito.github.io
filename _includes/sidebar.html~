@@ -27,6 +27,6 @@
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
-    <p>Theme by <a class="sidebar-nav-item" href="http://twitter.com/mdo">Mark Otto</a></p>
+    <p>Theme by <a class="" href="http://twitter.com/mdo">@mdo</a></p>
   </div>
 </div>
