@@ -4,10 +4,11 @@ title: Home
 ---
 
 <div class="posts">
+<h1>Entradas</h1>
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> - creado el {{ post.date | date_to_string }}
+      <a href="{{ post.url }}">{{ post.title }}</a> - creada el {{ post.date | date_to_string }}
     </li>
   {% endfor %}
 </ul>

@@ -80,7 +80,7 @@ html {
   color: #fff;
   margin-top: 0;
   font-family: serif;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 /* Sidebar nav */
@@ -172,7 +172,7 @@ a.sidebar-nav-item:focus {
  * Themes
  *
  * As of v1.1, Hyde includes optional themes to color the sidebar and links
- * within blog posts. To use, add the class of your choosing to the `body`.
+ * within blogs. To use, add the class of your choosing to the `body`.
  */
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
@@ -247,4 +247,10 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+/*Added by Franexp*/
+.home-post {
+  font-size: 12px;
+  color: #000;
 }
