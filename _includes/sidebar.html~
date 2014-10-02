@@ -1,5 +1,5 @@
 <div class="sidebar">
-  <div class="container sidebar-sticky">
+  <div class="container">
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
@@ -27,6 +27,5 @@
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
-    <p>Theme by <a class="" href="http://twitter.com/mdo">@mdo</a></p>
   </div>
 </div>

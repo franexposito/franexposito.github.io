@@ -121,7 +121,7 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
+  padding-top:    2rem;
   padding-bottom: 4rem;
 }
 
@@ -250,13 +250,13 @@ a.sidebar-nav-item:focus {
 
 /*Added by Franexp*/
 .home-post {
-  font-size: 14px;
+  font-size: 15px;
   color: #000;
 	font-weight: 100;
 }
 
 .home-post a {
-	color: #48BAE0;
+	color: #1D8DB3;
 }
 
 .home-post a:focus,
