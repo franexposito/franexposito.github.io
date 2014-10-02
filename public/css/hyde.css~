@@ -80,7 +80,7 @@ html {
   color: #fff;
   margin-top: 0;
   font-family: serif;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 /* Sidebar nav */
@@ -96,6 +96,10 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+
+a.sidebar-nav-item {
+	font-size: 14px;
 }
 
 /* Sticky sidebar
