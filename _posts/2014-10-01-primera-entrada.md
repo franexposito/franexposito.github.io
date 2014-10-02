@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Primera entrada"
-description: ""
+title: Primera entrada
+description: 
 category: 
 tags: [inicio, entrada, prueba]
 ---
