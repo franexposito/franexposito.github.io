@@ -251,7 +251,17 @@ a.sidebar-nav-item:focus {
 
 /*Added by Franexp*/
 .home-post {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
 	font-weight: 100;
+}
+
+.home-post a {
+	color: #54D4FF;
+}
+
+.home-post a:focus,
+.home-post a:hover {
+	text-decoration: underline;
+	color: #48BAE0;
 }
