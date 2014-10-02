@@ -41,7 +41,7 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -102,6 +102,10 @@ a.sidebar-nav-item {
 	font-size: 14px;
 }
 
+.sidebar p {
+	font-size: 12px;
+}
+
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
@@ -140,7 +144,7 @@ a.sidebar-nav-item {
 @media (min-width: 64em) {
   .content {
     margin-left: 14rem;
-    margin-right: 4rem;
+    margin-right: 0rem;
   }
 }
 
@@ -253,18 +257,14 @@ a.sidebar-nav-item {
 }
 
 /*Added by Franexp*/
-.home-post {
+.home-post,
+.list-category {
   font-size: 15px;
   color: #000;
 	font-weight: 100;
 }
 
-.home-post a {
+.home-post a,
+.list-category a {
 	color: #1D8DB3;
-}
-
-.home-post a:focus,
-.home-post a:hover {
-	text-decoration: underline;
-	color: #54D4FF;
 }

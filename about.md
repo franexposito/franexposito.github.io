@@ -1,30 +1,20 @@
 ---
 layout: page
-title: About
+title: Sobre mí
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Este es mi blog personal, me recuerda lo que tengo que hacer y la vez ayuda a la gente
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+No soy demasiado listo, pero si estás aqui es porque has necesitado mi ayuda. Este blog es sencillo y personal y en él que te contaré como hacer cosas. Algunas veces te contaré como hacer un blog en *Jekyll*, otras veces te contaré como hacer algo con *jQuery* y otras simplemente me enseñarás tu a mi.
+Si tienes alguna duda, alguna queja o simplemente quieres hablar conmigo, puedes encontrarme por estos sitios: 
 
-There are currently two themes built on Poole:
+* [@FranExp](http://twitter.com/FranExp)
+* [Github](http://github.com/franexposito)
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+## Mis trabajos
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+Si quieres conocer algunos de mis trabajos solo tienes que visitar mi [portfolio](/portfolio.html).
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+Gracias por leerme!
