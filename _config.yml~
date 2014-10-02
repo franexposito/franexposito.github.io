@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            Fran Exposito
 tagline:          'Blog'
 description:      ''
-url:              http://franexposito.github.io
+url:              http://hyde.getpoole.com
 baseurl:          /
 
 author:
