@@ -12,4 +12,4 @@ El proyecto ha sido realizado en:
 * [Jquery](http://jquery.com/)
 * [Twitter Bootstrap](http://getbootstrap.com/)
 
-En el siguiente enlace se puede ver una [demo](/bkst).
+<a class="pagination-item demo" href="/bkst">Demo</a>

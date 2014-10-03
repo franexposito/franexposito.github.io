@@ -1,0 +1,29 @@
+/*Added by Franexp*/
+.home-post,
+.list-category {
+  font-size: 15px;
+  color: #000;
+  font-weight: 100;
+}
+
+.home-post a,
+.list-category a {
+  color: #1D8DB3;
+}
+
+.demo {
+  text-align: center;
+  font-size: 20px;
+  color: #202020;
+  border: 1px solid #202020;
+  background: #fff;
+  padding: 0.25rem;
+  width: 200px;
+}
+
+a.demo:hover,
+a.demo:focus {
+  background: #202020;
+  color: #fff;
+  text-decoration: none;
+}
