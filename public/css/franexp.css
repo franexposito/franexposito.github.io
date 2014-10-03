@@ -27,3 +27,8 @@ a.demo:focus {
   color: #fff;
   text-decoration: none;
 }
+
+.resumen {
+  font-size: 13px;
+  color: #7e7e7e;
+}

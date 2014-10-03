@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Primera entrada
-description: 
+description: Este es un resumen de la maldita entrada. Aqui hablaré de lo que me salga del alma.
 category: general
 tags: [inicio, entrada, prueba]
 ---
