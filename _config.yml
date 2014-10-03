@@ -3,7 +3,10 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        /:title/
+permalink:
+  - post: :title/
+  - page: /:site.page-perma/:page.some-front-matter/:title/
+  - lemurs: /collections/:collection/:title/
 relative_permalinks: true
 
 # Setup
