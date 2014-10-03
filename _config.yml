@@ -3,9 +3,7 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:
-  - post: /:title/
-  - page: /:page/:basename/
+permalink: pretty
 relative_permalinks: true
 
 # Setup
