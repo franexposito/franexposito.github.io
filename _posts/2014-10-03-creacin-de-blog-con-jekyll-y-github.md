@@ -12,10 +12,10 @@ Una de las formas más sencillas que he probado a la hora de publicar un blog es
 ###¿Por qué elegir este sistema?
 Esta pregunta tiene muchas respuestas, en mi caso lo escogí por diversos motivos:
 
+* **Es simple y funciona.**
 * Permite crear entradas con un sencillo bloc de notas y la utilización de [Markdown](http://daringfireball.net/projects/markdown/) que para quién no lo conozca es un lenguaje de marcado bastante ligero y sencillo que se convierte a XHTML. Ya hablaré más adelante en una entrada propia. También permite utilizar Textile o Liquid.
 * Permite olvidarte de buscar un hosting adecuado y que cumpla con tus necesidades ya que puedes alojarlo en Github de manera totalmente gratuita.
 * Es altamente personalizable, de manera mucho mas intuitiva que blogs creadas con otros sistemas como WordPress, Joomla, etc.
-* **Es simple y funciona.**
 * **Puedes utilizar tu propio dominio.** Esto es especialmente importante ya que si tienes un blog en wordpress puedes migrarlo y mantener tu dominio.
 
 ###Inconvenientes
