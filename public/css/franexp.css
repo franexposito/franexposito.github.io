@@ -6,9 +6,13 @@
   font-weight: 100;
 }
 
+.home-post small{
+  color: #535353;
+}
+
 .home-post a,
 .list-category a {
-  color: #1D8DB3;
+  color: #202020;
 }
 
 .demo {
