@@ -4,9 +4,8 @@ highlighter:      pygments
 
 # Permalinks
 permalink:
-  - post: :title/
-  - page: /:site.page-perma/:page.some-front-matter/:title/
-  - lemurs: /collections/:collection/:title/
+  - post: /:title/
+  - page: /:page/:basename/
 relative_permalinks: true
 
 # Setup
