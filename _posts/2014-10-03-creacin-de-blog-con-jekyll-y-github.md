@@ -83,6 +83,15 @@ De esta manera también podemos crear páginas:
 $ rake page name="pagina.md"
 </code></pre>
 
+Para instalar un tema solo necesitamos el siguiente comando:
+<pre><code>
+$ rake theme:install git="url-del-tema"
+</code></pre>
+O si ya te has descargado el tema solo necesitas copiarlo en la carpeta *./_theme_packages/* y ejecutar el siguiente comando:
+<pre><code>
+$ rake theme:install name="THEME-NAME"
+</code></pre>
+
 Yo se que tu sabes mucho de github pero te voy a dejar aquí los comandos para subir el proyecto por si hoy tienes un mal día y no lo recuerdas:
 <pre><code>
 $ git add --all
@@ -104,6 +113,7 @@ ping USUARIO.github.io
 Ahora solo queda esperar a que se expanda y lo tendremos listo en unas cuentas horas.
 
 ###Conclusión
+Puedes encontrar consejos, comandos y un sinfín de posibilidades en la [documentación](http://jekyllrb.com/docs/home/) de la página web oficial.  
 Al final me he extendido más de lo que quisiera y aún asi apenas he podido abarcar una pequeña parte de Jekyll. Si tienes alguna duda no dudes en consultarmela a través de Twitter o a través de [Github](http://github.com/franexposito/franexposito.github.io). ¡Gracias por leerme!
 <br />
 <br />
