@@ -8,7 +8,7 @@ Consiste en una aplicación cuya funcionalidad es la de copiar un enlace de un d
 Personalmente me encargué de la realización del frontend de la web, el backend así como de la extensión.
 
 <a class="demo demo-left" target="_blank" href="http://linkbook.mobi">Web</a>
-<a class="demo demo-center" target="_blank" href="https://play.google.com/store/apps/details?id=mobi.linkbook">App Android</a>
+<a class="demo demo-center" target="_blank" href="https://play.google.com/store/apps/details?id=mobi.linkbook">Android</a>
 <a class="demo demo-right" target="_blank" href="https://chrome.google.com/webstore/detail/linkbook/ncchapghfddgbkbaidjfgobklhcjjeal">Extensión</a>
 <br />
 <br />
@@ -22,7 +22,7 @@ El proyecto ha sido realizado en:
 * [Twitter Bootstrap](http://getbootstrap.com/)
 
 <a class="demo demo-left" target="_blank" href="/bkst">Demo</a>
-<a class="demo demo-right" target="_blank" href="http://github.com/franexposito/bkst-calculator">Github Project</a>
+<a class="demo demo-right" target="_blank" href="http://github.com/franexposito/bkst-calculator">Github</a>
 <br />
 <br />
 <br />
@@ -30,4 +30,4 @@ El proyecto ha sido realizado en:
 ###Gestor Taller
 Pequeña colaboración en esta aplicación web para la gestión de la entrada y salida de un taller informático. Encargado de realizar la funcionalidad de buscar clientes con **Jquery**
 
-<a class="demo" target="_blank" href="https://github.com/ccamposfuentes/gestorTaller">Github Project</a>
+<a class="demo" target="_blank" href="https://github.com/ccamposfuentes/gestorTaller">Github</a>

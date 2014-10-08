@@ -64,3 +64,8 @@ a.demo:focus {
   font-size: 13px;
   color: #7e7e7e;
 }
+
+.sidebar h3 {
+  color: #fff;
+  font-size: 14px;
+}
