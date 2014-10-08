@@ -44,6 +44,8 @@ El plugin permite numerosas opciones. Algunas muy interesantes son:
 
 Puedes encontrarlas todas en la [documentación oficial](http://www.smashinglabs.pl/gmap/documentation).
 
+**Aviso:** hay un error muy común a la hora de no visualizar bien el mapa y es que debemos de asignarle un tamaño al contenedor donde está situado el mapa, puesto que si no tiene un tamañao antes de poner el mapa este no aparecerá correctamente.
+
 ###Ejemplos
 <pre><code>
 $('#map').gMap({ 
