@@ -12,6 +12,8 @@ tagline:          'Blog'
 description:      ''
 url:              http://franexposito.es
 baseurl:          /
+gems:
+  - jekyll-sitemap
 
 author:
   name:           'Fran Exposito'
