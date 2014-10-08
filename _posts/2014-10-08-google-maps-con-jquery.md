@@ -7,7 +7,7 @@ tags: [web, jquery, google map]
 ---
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
-<script src="recursos/js/jquery.gmap.min.js"></script>
+<script src="/recursos/js/jquery.gmap.min.js"></script>
 {% include JB/setup %}
 
 Introducir un mapa de Google Maps en nuestra página web puede resultar una tarea sencilla si conocemos previamente la dirección pero puede resultar complejo si queremos que los usuarios introduzca su dirección o si queremos detectar automaticamente la dirección. Para ello tenemos un plugin que facilita estas funciones en jQuery: [gMap for V3 Google Maps API](https://github.com/fridek/gmap). Este plugin te permite:
@@ -46,24 +46,32 @@ Puedes encontrarlas todas en la [documentación oficial](http://www.smashinglabs
 
 ###Ejemplos
 <pre><code>
-$('#map1').gMap({ 
-        latitude: 43.653561, 
-        longitude: -0.567296,
+$('#map').gMap({ 
+        latitude: 37.196937, 
+        longitude: -3.624265,
         zoom: 18,
-        markers: [{latitude: 43.653561, longitude: -0.567296}]
+        markers: [{latitude: 37.196937, longitude: -3.624265}]
 });
 </code></pre>
 
 <div class="map" id="map1"></div>
+<br />
+<pre><code>
+$('#map').gMap({});
+</code></pre>
+
+<div class="map" id="map2"></div>
 
 
 
 <!-- script mapas -->
 <script type="application/javascript">
 $('#map1').gMap({ 
-        latitude: 43.653561, 
-        longitude: -0.567296,
+        latitude: 37.196937, 
+        longitude: -3.624265,
         zoom: 18,
-        markers: [{latitude: 43.653561, longitude: -0.567296}]
+        markers: [{latitude: 37.196937, longitude: -3.624265}]
 });
+
+$('#map2').gMap({});
 </script>
