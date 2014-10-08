@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creación de blog con Jekyll y Github"
-description: "Como crear un sencillo blog estático con Jekyll y alojarlo en Github"
+description: "Como crear un sencillo blog estático con Jekyll y alojarlo en Github."
 category: Web 
 tags: [jekyll, github, blog, page]
 ---
