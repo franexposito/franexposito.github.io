@@ -63,9 +63,6 @@ a.demo:focus {
     border-bottom-left-radius: 0px;
   }
   
-  .map{
-    width: 600px;
-  }
 }
 
 .resumen {
@@ -79,6 +76,6 @@ a.demo:focus {
 }
 
 .map {
-  width: 600px;
+  width: 350px;
   height: 300px;
 }

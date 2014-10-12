@@ -3,11 +3,13 @@ layout: post
 title: "Google Maps con jQuery"
 description: "Introducir un mapa de Google Maps en una web con plugin para jQuery."
 category: Web
-tags: [web, jquery, google map]
+tags: [web, jquery, google map, html5]
 ---
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
 <script src="/recursos/js/jquery.gmap.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 {% include JB/setup %}
 
 Introducir un mapa de Google Maps en nuestra página web puede resultar una tarea sencilla si conocemos previamente la dirección pero puede resultar complejo si queremos que los usuarios introduzca su dirección o si queremos detectar automaticamente la dirección. Para ello tenemos un plugin que facilita estas funciones en jQuery: [gMap for V3 Google Maps API](https://github.com/fridek/gmap). Este plugin te permite:
@@ -18,13 +20,13 @@ Introducir un mapa de Google Maps en nuestra página web puede resultar una tare
 * Utilizar los controles personalizados.
 
 La utilización del plugin es sencillo. Solo necesitamos añadir el siguiente código:
-<pre><code>
+<pre><code class="html">
 &lt;script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"&gt;&lt;/script&gt;
 &lt;script src="RUTA/jquery.gmap.min.js"&gt;&lt;/script&gt;
 </code></pre>
 
 Ahora solo necesitas indicarle al plugin como quieres mostrar el mapa y las diferentes opciones. Por ejemplo:
-<pre><code>
+<pre><code class="javascript">
 $('#map').gMap({ 
         latitude: 43.653561, 
         longitude: -0.567296,

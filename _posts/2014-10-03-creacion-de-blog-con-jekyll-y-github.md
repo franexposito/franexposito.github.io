@@ -5,6 +5,8 @@ description: "Como crear un sencillo blog estático con Jekyll y alojarlo en Git
 category: Web 
 tags: [jekyll, github, blog, page]
 ---
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 {% include JB/setup %}
 
 Una de las formas más sencillas que he probado a la hora de publicar un blog es la utilización de [Jekyll](http://jekyllrb.com/). Este sistema es utilizado en [Github](http://github.com). Fue desarrollado por Tom Preston-Werner, fundador de GitHub, y está desarrollado en Ruby. Como indica en su propia pagina web oficial, *hace lo que tu le dices que haga, ni más ni menos*. 
