@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Portfolio
+header: Portfolio
+group: navigation
 ---
 ##Proyectos Personales
 ###LinkBook

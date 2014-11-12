@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            Fran Exposito
 tagline:          'Blog'
-description:      ''
+description:      'This is a theme for Jekyll, do it with love'
 url:              http://franexposito.es
 baseurl:          /
 gems:
@@ -22,7 +22,12 @@ author:
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+version:          1.0         
 
-github:
-  repo:           https://github.com/poole/hyde
+# Social vars
+active : yes # yes = active, empty = deactive
+github: http://github.com/franexposito
+linkedin: http://linkdin.com
+twitter: http://twitter.com/FranExp
+facebook: http://facebook.com
+instagram: http://instagram.com

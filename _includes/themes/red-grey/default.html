@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/style.css" >
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+    {% include JB/analytics %}
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navresponsive">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navresponsive">
+          <ul class="nav navbar-nav navbar-right">
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="social col-sm-3">
+        <div class="cont col-sm-12">
+          {% if site.description %} 
+            <p>"{{ site.description }}"</p> 
+          {% endif %}
+          {% if site.active %}
+            <h4>Social</h4>
+            {% if site.github %}<a href="{{ site.github }}"><img src="{{ ASSET_PATH }}/images/github-icon.png"> GitHub</a><br />{% endif %}
+            {% if site.linkedin %}<a href="{{ site.linkedin }}"><img src="{{ ASSET_PATH }}/images/link-icon.png"> Linkedin</a><br />{% endif %}
+            {% if site.twitter %}<a href="{{ site.twitter }}"><img src="{{ ASSET_PATH }}/images/t-icon.png"> Twitter</a><br />{% endif %}
+            {% if site.facebook %}<a href="{{ site.facebook }}"><img src="{{ ASSET_PATH }}/images/f-icon.png"> Facebook</a><br />{% endif %}
+            {% if site.instagram %}<a href="{{ site.instagram }}"><img src="{{ ASSET_PATH }}/images/insta-icon.png"> Instagram</a>{% endif %}
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-sm-9 content">
+        <div class="cont col-sm-12">
+          {{ content }}
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; {{ site.author.name }} 2014. Theme <a href="" target="_blank" >Red-Grey</a>.</p>
+      </footer>
+
+    </div> <!-- /container -->
+    <!-- JS -->
+    <script src="{{ ASSET_PATH }}/js/jquery-2.1.1.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/bootstrap.css"></script>
+  </body>
+</html>
