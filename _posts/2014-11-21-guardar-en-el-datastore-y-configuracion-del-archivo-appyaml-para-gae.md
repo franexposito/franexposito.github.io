@@ -118,7 +118,7 @@ En mi caso no es necesario crear una key para el objeto asistente puesto que se 
 Un aspecto importante es que para que esto funcione, debe haber un archivo:
 
 ```
-**__init__.py**
+__init__.py
 ```
 
 (el archivo puede estar en blanco) en cada uno de los directorios donde tengamos nuestros **.py**.
