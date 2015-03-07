@@ -11,6 +11,7 @@ function animateRotate(elem, direction) {
     d1 = 0;
     d2 = 180;
   }
+
   $({deg: d1}).animate({deg: d2}, {
     duration: 800,
     step: function (now) {
@@ -31,6 +32,10 @@ $(document).ready(function () {
   $('#info').on('mouseleave', function () {
     $('.text-info-appear').slideUp();
     setTimeout(function () {$('.hover-me').fadeIn(); }, 500);
+  });
+
+  $('#totop').on('click', function (evt) {
+    $("html, body").animate({ scrollTop: 0 }, 500);
   });
 
   $('#navicon').on('click', function (evt) {
@@ -60,6 +65,12 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
+    if ($(window).scrollTop() > 50) {
+      $('.navbar-btn').css('display', 'block');
+    } else {
+      $('.navbar-btn').css('display', 'none');
+    }
+
     if ($(window).scrollTop() + $(window).height() === $(document).height()) {
       var newval = $(window).height() - 55;
       $('.logo').stop(true, true).animate({ top: newval }, 600);
