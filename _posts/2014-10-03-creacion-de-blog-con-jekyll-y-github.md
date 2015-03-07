@@ -2,14 +2,15 @@
 layout: post
 title: "Creación de blog con Jekyll y Github"
 description: "Como crear un sencillo blog estático con Jekyll y alojarlo en Github."
-category: Web 
+category: Web
+comments: true
 tags: [jekyll, github, blog, page]
 ---
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 {% include JB/setup %}
 
-Una de las formas más sencillas que he probado a la hora de publicar un blog es la utilización de [Jekyll](http://jekyllrb.com/). Este sistema es utilizado en [Github](http://github.com). Fue desarrollado por Tom Preston-Werner, fundador de GitHub, y está desarrollado en Ruby. Como indica en su propia pagina web oficial, *hace lo que tu le dices que haga, ni más ni menos*. 
+Una de las formas más sencillas que he probado a la hora de publicar un blog es la utilización de [Jekyll](http://jekyllrb.com/). Este sistema es utilizado en [Github](http://github.com). Fue desarrollado por Tom Preston-Werner, fundador de GitHub, y está desarrollado en Ruby. Como indica en su propia pagina web oficial, *hace lo que tu le dices que haga, ni más ni menos*.
 
 ###¿Por qué elegir este sistema?
 Esta pregunta tiene muchas respuestas, en mi caso lo escogí por diversos motivos:
@@ -21,7 +22,7 @@ Esta pregunta tiene muchas respuestas, en mi caso lo escogí por diversos motivo
 * **Puedes utilizar tu propio dominio.** Esto es especialmente importante ya que si tienes un blog en wordpress puedes migrarlo y mantener tu dominio.
 
 ###Inconvenientes
-Pero no todo es tan bonito ya que como todo sistema tiene sus inconvenientes y es que Jekyll no está pensando para usar una base de datos para almacenar las entradas, páginas, etc. Cada entrada y página es un archivo de texto en cuya cabecera se encuentra información en formato YAML indicando el título, categorias, descripción etc que es interpretado por Jekyll. 
+Pero no todo es tan bonito ya que como todo sistema tiene sus inconvenientes y es que Jekyll no está pensando para usar una base de datos para almacenar las entradas, páginas, etc. Cada entrada y página es un archivo de texto en cuya cabecera se encuentra información en formato YAML indicando el título, categorias, descripción etc que es interpretado por Jekyll.
 
 ###Instalación
 Dejémnos de tanta charla y vayamos a lo que verdaderamente importa, ¿esto como se instala?. Esta pregunta tiene una respuesta muy sencilla.
@@ -37,7 +38,7 @@ Ahora necesitamos instalar Jekyll en nuestro ordenador. Esto nos servirá para p
 <pre><code>
 $ gem install jekyll
 </code></pre>
-Ya tenemos nuestra máquina preparada. 
+Ya tenemos nuestra máquina preparada.
 
 #####3. Jekyll Bootstrap
 Personalmente yo he preferido utilizar [Jekyll Bootstrap](http://jekyllbootstrap.com/) para este tutorial puesto que permite instalar temas, crear páginas y post desde linea de comandos.
@@ -53,7 +54,7 @@ $ git push origin master
 Ya está. Ya tenemos nuestro blog en Jekyll creado. Puedes comprobarlo tu mismo introduciendo en tu navegador la dirección que has utilizado para tu proyecto: *http://USUARIO.github.io/*
 
 #####4. Archivo de configuración
-Jekyll dispone de un archivo de configuración llamado *_config.yml*. En el puedes encontrar las diferentes opciones de tu blog (titulo, descripción, autor, versión, tipos de enlaces, etc.). 
+Jekyll dispone de un archivo de configuración llamado *_config.yml*. En el puedes encontrar las diferentes opciones de tu blog (titulo, descripción, autor, versión, tipos de enlaces, etc.).
 
 Como puedes ver Jekyll tiene también multitud de [temas](http://jekyllthemes.org/) creados por otros usuarios y que puedes utilizar de manera totalmente libre.
 
@@ -115,7 +116,7 @@ ping USUARIO.github.io
 Ahora solo queda esperar a que se expanda y lo tendremos listo en unas cuentas horas.
 
 ###Conclusión
-Puedes encontrar consejos, comandos y un sinfín de posibilidades en la [documentación](http://jekyllrb.com/docs/home/) de la página web oficial.  
+Puedes encontrar consejos, comandos y un sinfín de posibilidades en la [documentación](http://jekyllrb.com/docs/home/) de la página web oficial.
 Al final me he extendido más de lo que quisiera y aún asi apenas he podido abarcar una pequeña parte de Jekyll. Si tienes alguna duda no dudes en consultarmela a través de Twitter o a través de [Github](http://github.com/franexposito/franexposito.github.io). ¡Gracias por leerme!
 <br />
 <br />

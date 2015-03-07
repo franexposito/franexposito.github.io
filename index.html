@@ -1,17 +1,153 @@
 ---
 layout: default
-title: Home
+title: Fran Expósito
 ---
 
-<div class="posts">
-<ul>
-  {% for post in site.posts %}
-    <li class="home-post">
-      <a href="{{ post.url }}">{{ post.title }}</a> - <small>created at {{ post.date | date_to_string }}</small>
-      <p class="resumen">{{ post.description }}</p>
-    </li>
-  {% endfor %}
-</ul>
-</div>
+<div id="navicon">
+    <i class="fa fa-bars fa-2x"></i>
+  </div>
+  <nav id="menu">
+    <ul class="menu-ul">
+      <li><a class="menu-a" href="#works">Works</a></li>
+      <li><a class="menu-a" href="#about">About me</a></li>
+      <li><a class="menu-a" href="#blog">Blog</a></li>
+      <li><a class="menu-a" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="logo">
+    <h1>FE</h1>
+  </div>
 
-</div>
+  <div id="principal">
+    <div id="info" class="height100">
+      <div class="hover-me">
+        <i class="fa fa-chevron-down fa-3x info-hover"></i>
+      </div>
+      <div class="info-text">
+        <h2>My name is Fran Expósito <strong class="text-pard">I</strong></h2>
+          <div class="text-info-appear">
+            <p>I am a web designer who loves the websites of quality and good work.</p>
+            <p>"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."</p>
+            <button class="btn btn-success btn-info">View my works</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="menu2">
+    <ul class="menu-projects">
+      <li class="title-m">Works</li>
+      <li><a class="menu-a" href="#evenge">Evenge</a></li>
+      <li><a class="menu-a" href="#taggie">Taggie</a></li>
+      <li><a class="menu-a" href="#linkbook">LinkBook</a></li>
+      <li><a class="menu-a" href="#exodo">Exodo</a></li>
+    </ul>
+  </nav>
+
+  <section class="col-sm-9 col-sm-offset-3" id="blog">
+    <h1 class="title">Blog</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        <ul>
+          {% for post in site.posts %}
+          <li class="home-post">
+            <a href="{{ post.url }}">{{ post.title }}</a> - <small>created at {{ post.date | date_to_string }}</small>
+            <p class="resumen">{{ post.description }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+        {{ content }}
+      </div>
+    </div>
+  </section>
+
+  <section class="col-sm-9 col-sm-offset-3" id="works">
+    <h1 class="title">Works</h1>
+    <div class="row">
+      <div id="evenge" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/evenge-p1.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>Evenge</h4>
+            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
+            <a target="_blank" href="http://evenge-2014.appspot.com">Web</a>
+            <a target="_blank" href="http://github.com/evenge">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="taggie" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/taggie-p2.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>Taggie</h4>
+            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
+            <a target="_blank" href="http://taggie.me">Web</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="linkbook" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/linkbook-p3.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>LinkBook</h4>
+            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
+            <a target="_blank" href="http://linkbook.mobi">Web</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="exodo" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/exodo-p4.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>Exodo</h4>
+            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
+            <a target="_blank" href="http://exo.do">Web</a>
+            <a target="_blank" href="http://github.com/exodo">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="col-sm-9 col-sm-offset-3" id="about">
+    <h1 class="title">About me</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>My name is Fran Exposito. I am a web designer trained at the University of Granada, Spain. I specialize in
+        front-end and back-end. Knowledge in JavaScript, JQuery, CSS, HTML5, Bootstrap, PHP and Python.</p>
+        <p>I always look for the best quality of service and good atmosphere at work. I am a hardworking person with leadership skills and good communication.</p>
+      </div>
+      <div id="skills-logos" class="col-sm-12">
+        <h4>Skills</h4>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/sk-1.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/sk-2.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/sk-3.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/sk-4.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/sk-5.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/sk-6.png"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="col-sm-9 col-sm-offset-3" id="contact">
+    <h1 class="title">Contact</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        <h6><i class="fa fa-envelope-o"></i> <a target="_blank" href="mailto:8macau8@gmail.com">8macau8@gmail.com</a></h6>
+        <h6><i class="fa fa-twitter"></i> <a target="_blank" href="http://twitter.com/FranExp">@FranExp</a></h6>
+        <h6><i class="fa fa-github"></i> <a target="_blank" href="http://github.com/franexposito">franexposito</a></h6>
+        <h6><i class="fa fa-linkedin"></i> <a target="_blank" href="http://es.linkedin.com/in/franexpositocruz">franexposito</a></h6>
+      </div>
+    </div>
+  </section>

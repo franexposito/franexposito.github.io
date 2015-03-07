@@ -3,6 +3,7 @@ layout: post
 title: "Gráficos con jQuery"
 description: "Introducir gráficos en nuestra página web con un sencillo e intuitivo plugin"
 category: Web
+comments: true
 tags: [jquery, graficos, barras, donuts, html5]
 ---
 <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
@@ -13,14 +14,14 @@ tags: [jquery, graficos, barras, donuts, html5]
 <script>hljs.initHighlightingOnLoad();</script>
 {% include JB/setup %}
 
-Introducir gráficos en una página web se convierte en una tarea sencilla gracias a este plugin para jQuery llamada [Morris.js](http://morrisjs.github.io/morris.js/).  
+Introducir gráficos en una página web se convierte en una tarea sencilla gracias a este plugin para jQuery llamada [Morris.js](http://morrisjs.github.io/morris.js/).
 Este plugin nos facilita mucho la tarea de realizar distintos tipos de gráficos:
 
 * **Gráficos de barras**
 * **Gráficos de lineas**
 * **Gráficos de "donuts"**
 
-Para utitilizar lo haremos a través de unas cuentas lineas de código.  
+Para utitilizar lo haremos a través de unas cuentas lineas de código.
 En primer lugar, como siempre, tenemos que añadir el plugin a nuestra web. Para ello tenemos dos opciones: [descargarlo]() o introducir directamente la siguiente línea de código:
 
 <pre><code class="html">
@@ -64,7 +65,7 @@ new Morris.Bar({
     });
 </code></pre>
 
-* A través de *element* indicamos el id del contenedor. 
+* A través de *element* indicamos el id del contenedor.
 * A través de *data*, indicamos en pares de datos, los valores del gráfico.
 * A través de *xkey* indicamos el nombre de los atributos que se representan en la coordenada x.
 * A través de ykey* indiciamos el nombre de los atributos que se representan en la coordenada y.
@@ -101,8 +102,8 @@ new Morris.Bar({
       labels: ['Days'],
       resize: true
     });
-</code></pre>  
-<div id="migrafico1" style="height: 350px;"></div> 
+</code></pre>
+<div id="migrafico1" style="height: 350px;"></div>
 <pre><code class="javascript">
 new Morris.Line({
       element: 'migrafico2',
@@ -165,7 +166,7 @@ new Morris.Bar({
       labels: ['Days'],
       resize: true
     });
-    
+
 new Morris.Line({
       element: 'migrafico2',
       data: [

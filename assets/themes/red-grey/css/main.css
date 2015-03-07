@@ -335,8 +335,24 @@ body {
   opacity: 1;
 }
 
-#blog {
+#blog ul {
+  margin-top: 20px;
+  padding: 0;
+}
 
+#blog .home-post {
+  list-style: none;
+  padding: 0 5px;
+  border-left: 2px solid #3c3c3c;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+#blog .home-post:hover {
+  background: #f5f5f5;
 }
 
 footer {

@@ -3,6 +3,7 @@ layout: post
 title: "Google Maps con jQuery"
 description: "Introducir un mapa de Google Maps en una web con plugin para jQuery."
 category: Web
+comments: true
 tags: [web, jquery, google map, html5]
 ---
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -27,8 +28,8 @@ La utilización del plugin es sencillo. Solo necesitamos añadir el siguiente c�
 
 Ahora solo necesitas indicarle al plugin como quieres mostrar el mapa y las diferentes opciones. Por ejemplo:
 <pre><code class="javascript">
-$('#map').gMap({ 
-        latitude: 43.653561, 
+$('#map').gMap({
+        latitude: 43.653561,
         longitude: -0.567296,
         zoom: 18,
         markers: [{latitude: 43.653561, longitude: -0.567296}]
@@ -50,8 +51,8 @@ Puedes encontrarlas todas en la [documentación oficial](http://www.smashinglabs
 
 ###Ejemplos
 <pre><code>
-$('#map').gMap({ 
-        latitude: 37.196937, 
+$('#map').gMap({
+        latitude: 37.196937,
         longitude: -3.624265,
         zoom: 18,
         markers: [{latitude: 37.196937, longitude: -3.624265}]
@@ -70,8 +71,8 @@ $('#map').gMap({});
 
 <!-- script mapas -->
 <script type="application/javascript">
-$('#map1').gMap({ 
-        latitude: 37.196937, 
+$('#map1').gMap({
+        latitude: 37.196937,
         longitude: -3.624265,
         zoom: 18,
         markers: [{latitude: 37.196937, longitude: -3.624265}]

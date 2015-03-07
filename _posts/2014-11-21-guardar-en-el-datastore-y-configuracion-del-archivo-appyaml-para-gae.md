@@ -3,6 +3,7 @@ layout: post
 title: "Guardar en el datastore y configuración del archivo app.yaml para GAE"
 description: "Guardar entidades en el datastore de manera sencilla y configurar el archivo app.yaml para poer tener varios directorios."
 category: GAE
+comments: true
 tags: [webapp2, python, gae, datastore]
 ---
 {% include JB/setup %}
@@ -42,7 +43,7 @@ Cuando introducimos la url http://aplicacion.appspot.com/iAsistente muestra el f
 - url: /.*
 script: index.application
 ```
-Esto indica que cuando alguien introduce cualquier url, se enlazará al archivo **index.py**.  
+Esto indica que cuando alguien introduce cualquier url, se enlazará al archivo **index.py**.
 Cuando enviamos el formulario este nos llevara a la url http://aplicacion.appspot.com/asistente. En mi caso el archivo **asistente.py** se encuentra en la siguiente ruta:
 
 ```
@@ -95,25 +96,25 @@ application = webapp2.WSGIApplication([
 
 ```
 
-Como vemos en la parte inferior, cuando alguien introduce la dirección http://aplicacion.appspot.com/asistente esta se atiende desde la clase index.  
+Como vemos en la parte inferior, cuando alguien introduce la dirección http://aplicacion.appspot.com/asistente esta se atiende desde la clase index.
 Un dato importante es que, en mi caso, al utilizar solo esta clase desde un formulario no es necesario definir un metodo get. Aunque sería interesante crear un metodo get que reedireccione a otra página en caso de introducirse de manera manual la url.
 
-###Guardar en el datastore  
+###Guardar en el datastore
 En este caso solo nos queda recoger los datos enviados desde el formulario y guardarlos en el datastore. Para ello utilizaremos crearemos un objeto de nuestra clase Asistente y le asignamos las variables:
 
 ```
-asistente = Asistente()  
-sistente.idEvento = self.request.get('evento')  
-asistente.nombre = self.request.get('nombre')  
+asistente = Asistente()
+sistente.idEvento = self.request.get('evento')
+asistente.nombre = self.request.get('nombre')
 ```
 
 Finalmente solo nos queda guardarlo:
 
 ```
-asistente.put()  
+asistente.put()
 ```
 
-En mi caso no es necesario crear una key para el objeto asistente puesto que se creará automáticamente al guardarlo.  
+En mi caso no es necesario crear una key para el objeto asistente puesto que se creará automáticamente al guardarlo.
 
 Un aspecto importante es que para que esto funcione, debe haber un archivo:
 
