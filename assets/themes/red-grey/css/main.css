@@ -392,6 +392,7 @@ body {
 
 .page-content h2 {
   font-size: 16px;
+  color: #484848;
 }
 
 .page-content ul {
@@ -401,6 +402,19 @@ body {
 .page-content ul > li {
   list-style: none;
   padding: 0 2px;
+}
+
+.page-content ul li a {
+  font-size: 12px;
+}
+
+.bubble {
+  padding: 10px;
+}
+
+.cat {
+  padding: 0 5px;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 footer {
