@@ -12,8 +12,6 @@ tagline:          'Blog'
 description:      'This is a theme for Jekyll, do it with love'
 url:              http://franexposito.es
 baseurl:          /
-gems:
-  - jekyll-sitemap
 
 author:
   name:           'Fran Exposito'
@@ -22,12 +20,12 @@ author:
 paginate:         5
 
 # Custom vars
-version:          1.0         
+version:          1.0
 
 # Social vars
 active : yes # yes = active, empty = deactive
 github: http://github.com/franexposito
-linkedin: 
+linkedin:
 twitter: http://twitter.com/FranExp
-facebook: 
-instagram: 
+facebook:
+instagram:

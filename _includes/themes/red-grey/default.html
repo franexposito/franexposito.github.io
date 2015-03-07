@@ -1,83 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fran Expósito</title>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/style.css" >-->
+    <link type="text/css" rel="stylesheet" href="{{ ASSET_PATH }}/css/main.css">
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
 
-    <!-- Le styles -->
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="{{ ASSET_PATH }}/css/style.css" >
+<body>
+  <div class="col-sm-12 tp">
+    <div class="col-xs-2 color-top-1"></div>
+    <div class="col-xs-2 color-top-2"></div>
+    <div class="col-xs-2 color-top-3"></div>
+    <div class="col-xs-2 color-top-4"></div>
+    <div class="col-xs-2 color-top-5"></div>
+    <div class="col-xs-2 color-top-6"></div>
+  </div>
+  <div id="navicon">
+    <i class="fa fa-bars fa-2x"></i>
+  </div>
+  <nav id="menu">
+    <ul class="menu-ul">
+      <li><a class="menu-a" href="#works">Works</a></li>
+      <li><a class="menu-a" href="#about">About me</a></li>
+      <li><a class="menu-a" href="#blog">Blog</a></li>
+      <li><a class="menu-a" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="logo">
+    <h1>FE</h1>
+  </div>
+  <div id="principal">
+    <div id="info" class="height100">
+      <div class="hover-me">
+        <i class="fa fa-chevron-down fa-3x info-hover"></i>
+      </div>
+      <div class="info-text">
+        <h2>My name is Fran Expósito <strong class="text-pard">I</strong></h2>
+          <div class="text-info-appear">
+            <p>I am a web designer who loves the websites of quality and good work.</p>
+            <p>"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."</p>
+            <button class="btn btn-success btn-info">View my works</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <nav class="menu2">
+    <ul class="menu-projects">
+      <li class="title-m">Works</li>
+      <li><a class="menu-a" href="#evenge">Evenge</a></li>
+      <li><a class="menu-a" href="#taggie">Taggie</a></li>
+      <li><a class="menu-a" href="#linkbook">LinkBook</a></li>
+      <li><a class="menu-a" href="#exodo">Exodo</a></li>
+    </ul>
+  </nav>
 
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
-    {% include JB/analytics %}
-  </head>
+  <section class="col-sm-9 col-sm-offset-3" id="blog">
+    <h1 class="title">Blog</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        {{ content }}
+      </div>
+    </div>
+  </section>
 
-  <body>
-
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navresponsive">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navresponsive">
-          <ul class="nav navbar-nav navbar-right">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
+  <section class="col-sm-9 col-sm-offset-3" id="works">
+    <h1 class="title">Works</h1>
+    <div class="row">
+      <div id="evenge" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/images/evenge-p1.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>Evenge</h4>
+            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
+            <a target="_blank" href="http://evenge-2014.appspot.com">Web</a>
+            <a target="_blank" href="http://github.com/evenge">GitHub</a>
+          </div>
         </div>
       </div>
-    </nav>
 
-    <div class="container-fluid">
-      <div class="social col-sm-3">
-        <div class="cont col-sm-12">
-          {% if site.description %} 
-            <p>"{{ site.description }}"</p> 
-          {% endif %}
-          {% if site.active %}
-            <h4>Social</h4>
-            {% if site.github %}<a href="{{ site.github }}"><img src="{{ ASSET_PATH }}/images/github-icon.png"> GitHub</a><br />{% endif %}
-            {% if site.linkedin %}<a href="{{ site.linkedin }}"><img src="{{ ASSET_PATH }}/images/link-icon.png"> Linkedin</a><br />{% endif %}
-            {% if site.twitter %}<a href="{{ site.twitter }}"><img src="{{ ASSET_PATH }}/images/t-icon.png"> Twitter</a><br />{% endif %}
-            {% if site.facebook %}<a href="{{ site.facebook }}"><img src="{{ ASSET_PATH }}/images/f-icon.png"> Facebook</a><br />{% endif %}
-            {% if site.instagram %}<a href="{{ site.instagram }}"><img src="{{ ASSET_PATH }}/images/insta-icon.png"> Instagram</a>{% endif %}
-          {% endif %}
-        </div>
-      </div>
-      <div class="col-sm-9 content">
-        <div class="cont col-sm-12">
-          {{ content }}
+      <div id="taggie" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/images/taggie-p2.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>Taggie</h4>
+            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
+            <a target="_blank" href="http://taggie.me">Web</a>
+          </div>
         </div>
       </div>
 
-      <footer>
-        <p>&copy; {{ site.author.name }} 2014. Theme <a href="" target="_blank" >Red-Grey</a>.</p>
-      </footer>
+      <div id="linkbook" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/images/linkbook-p3.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>LinkBook</h4>
+            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
+            <a target="_blank" href="http://linkbook.mobi">Web</a>
+          </div>
+        </div>
+      </div>
 
-    </div> <!-- /container -->
-    <!-- JS -->
-    <script src="{{ ASSET_PATH }}/js/jquery-2.1.1.min.js"></script>
-    <script src="{{ ASSET_PATH }}/js/bootstrap.css"></script>
-  </body>
+      <div id="exodo" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/images/exodo-p4.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>Exodo</h4>
+            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
+            <a target="_blank" href="http://exo.do">Web</a>
+            <a target="_blank" href="http://github.com/exodo">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="col-sm-9 col-sm-offset-3" id="about">
+    <h1 class="title">About me</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <p>My name is Fran Exposito. I am a web designer trained at the University of Granada, Spain. I specialize in
+        front-end and back-end. Knowledge in JavaScript, JQuery, CSS, HTML5, Bootstrap, PHP and Python.</p>
+        <p>I always look for the best quality of service and good atmosphere at work. I am a hardworking person with leadership skills and good communication.</p>
+      </div>
+      <div id="skills-logos" class="col-sm-12">
+        <h4>Skills</h4>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/images/sk-1.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/images/sk-2.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/images/sk-3.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/images/sk-4.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/images/sk-5.png"></div>
+        <div class="col-xs-2"><img src="{{ ASSET_PATH }}/images/sk-6.png"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="col-sm-9 col-sm-offset-3" id="contact">
+    <h1 class="title">Contact</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        <h6><i class="fa fa-envelope-o"></i> <a target="_blank" href="mailto:8macau8@gmail.com">8macau8@gmail.com</a></h6>
+        <h6><i class="fa fa-twitter"></i> <a target="_blank" href="http://twitter.com/FranExp">@FranExp</a></h6>
+        <h6><i class="fa fa-github"></i> <a target="_blank" href="http://github.com/franexposito">franexposito</a></h6>
+        <h6><i class="fa fa-linkedin"></i> <a target="_blank" href="http://es.linkedin.com/in/franexpositocruz">franexposito</a></h6>
+      </div>
+    </div>
+  </section>
+
+  <footer class="col-sm-9 col-sm-offset-3">
+    <p>Fran Expósito. 2015 ©</p>
+  </footer>
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script type="application/javascript" src="{{ ASSET_PATH }}/js/main.js"></script>
+  <!-- scripts -->
+</body>
 </html>
