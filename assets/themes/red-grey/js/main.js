@@ -22,6 +22,15 @@ function animateRotate(elem, direction) {
   });
 }
 
+function scrollToThis(tar) {
+  'use strict';
+  var $target = $(tar);
+  $('html, body').stop().animate({'scrollTop': $target.offset().top
+    }, 900, 'swing', function () {
+    window.location.hash = tar;
+  });
+}
+
 $(document).ready(function () {
   "use strict";
   $('.hover-me').on('mouseover', function () {
@@ -89,5 +98,15 @@ $(document).ready(function () {
       }, 900, 'swing', function () {
       window.location.hash = target;
     });
+  });
+
+  $('.btn-info').on('click', function (e) {
+    e.preventDefault();
+    scrollToThis("#works");
+  });
+
+  $('.fa-angle-down').on('click', function (e) {
+    e.preventDefault();
+    scrollToThis("#blog");
   });
 });
