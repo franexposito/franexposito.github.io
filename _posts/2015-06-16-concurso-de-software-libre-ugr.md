@@ -8,13 +8,14 @@ tags: [ugr, centarmen, primer, premio, evenge]
 ---
 {% include JB/setup %}
 
-Todo empezó hayá por septiembre de 2014. Cuatro jovenes y totalmente inexpertos en cualquier materia emprendimos un viaje hacía un certamen de software libre. Junto con nosotros 37 proyectos más. Creo acertar al decir que ninguno de los cuatro integrantes apostaba por llegar tan lejos. Finalmente, unos cuantos meses después puedo decir que **hemos ganado**. Nuestro proyecto, el proyecto [Evenge](http://evenge.github.io) ha ganado.
+Todo empezó hayá por septiembre de 2014. Cuatro jovenes (Iván, Carlos, Victor y yo) totalmente inexpertos en cualquier materia emprendimos un viaje hacía un certamen de software libre. Junto con nosotros 37 proyectos más. Creo acertar al decir que ninguno de los cuatro integrantes apostaba por llegar tan lejos. Finalmente, unos cuantos meses después puedo decir que **hemos ganado**. Nuestro proyecto, el proyecto [Evenge](http://evenge.github.io) ha ganado.  
 
 ![imagen](/recursos/img/finalistas.jpeg)
 
 Me gustaría agradecer publicamente a la Oficina de Sowftware Libre de la Universidad de Granada y a todos los participantes por hacer posibles este premio obtenido.  
 
 También darle la enhorabuena a los proyectos finalistas:
+
 * 2do clasificado Don't touch my castle
 * 3er clasificado libreborme
 
