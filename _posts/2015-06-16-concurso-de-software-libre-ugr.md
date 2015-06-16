@@ -2,7 +2,7 @@
 layout: post
 title: "Primer clasificado en el Certamen de Proyectos Libre de la UGR 2014-2015"
 description: "Ganamos el primer premio del concurso de Software Libre de la Universida de Granada con el proyecto Evenge"
-category: UGR,
+category: UGR
 comments: true
 tags: [ugr, centarmen, primer, premio, evenge]
 ---
