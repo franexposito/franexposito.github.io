@@ -39,10 +39,12 @@ title: Fran Expósito
   <nav class="menu2 hidden-xs">
     <ul class="menu-projects">
       <li class="title-m">Works</li>
+      <li><a class="menu-a" href="#livemetrics">Livemetrics</a></li>
       <li><a class="menu-a" href="#evenge">Evenge</a></li>
+      <li><a class="menu-a" href="#shurscript">Shurscript</a></li>
+      <li><a class="menu-a" href="#pronuntia">Pronuntia</a></li>
       <li><a class="menu-a" href="#taggie">Taggie</a></li>
       <li><a class="menu-a" href="#linkbook">LinkBook</a></li>
-      <li><a class="menu-a" href="#exodo">Exodo</a></li>
     </ul>
   </nav>
 
@@ -58,7 +60,6 @@ title: Fran Expósito
           </li>
           {% endfor %}
         </ul>
-        {{ content }}
       </div>
     </div>
   </section>
@@ -66,6 +67,19 @@ title: Fran Expósito
   <section class="col-sm-9 col-sm-offset-3" id="works">
     <h1 class="title">Works</h1>
     <div class="row">
+      <div id="livemetrics" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/livemetrics-p1.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>Livemetrics</h4>
+            <p>Livemetrics is a website develop with Wordpress, PHP, Javascript, SASS, Foundationd and D3JS.</p>
+            <a target="_blank" href="http://livemetrics.ugr.es">Web</a>
+          </div>
+        </div>
+      </div>
+
       <div id="evenge" class="col-sm-12 work">
         <div class="row">
           <div class="col-sm-7 col-xs-7 img-cont">
@@ -73,9 +87,41 @@ title: Fran Expósito
           </div>
           <div class="col-sm-5 col-xs-5 description-cont">
             <h4>Evenge</h4>
-            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
+            <p>Evenge es un sistema de gestión automática de eventos con inclusión en diferentes blog (Wordpress, Blogspot), correo electrónico y redes sociales.</p>
+            <p>Implantado sobre el PaaS Google App Engine, desarrollado en Python, usando webapp2 y Jinja.</p>
+            <p>Proyecto 1er premio en el Concurso Universitario de Software Libre (http://www.concursosoftwarelibre.org/1415/0)</p>
             <a target="_blank" href="http://evenge-2014.appspot.com">Web</a>
             <a target="_blank" href="http://github.com/evenge">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="shurscript" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/shurscript-p1.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>Shurscript</h4>
+            <p>Script de usuario para ForoCoches.com para automatizar y añadir funciones como citas, spoiler, autocarga de post, etc.
+              Encargado de realizar varios módulos en JavaScript como el módulo de Spoiler y el de Galería de imágenes</p>
+            <a target="_blank" href="https://github.com/franexposito/shurscript">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="pronuntia" class="col-sm-12 work">
+        <div class="row">
+          <div class="col-sm-7 col-xs-7 img-cont">
+            <img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/pronuntia-p1.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-5 description-cont">
+            <h4>Pronuntia</h4>
+            <p>Evenge es un sistema de gestión automática de eventos con inclusión en diferentes blog (Wordpress, Blogspot), correo electrónico y redes sociales.</p>
+            <p>Implantado sobre el PaaS Google App Engine, desarrollado en Python, usando webapp2 y Jinja.</p>
+            <p>Proyecto 1er premio en el Concurso Universitario de Software Libre (http://www.concursosoftwarelibre.org/1415/0)</p>
+            <a target="_blank" href="https://github.com/franexposito/pronuntia-web">GitHub</a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.pronuntiapp&hl=es">App</a>
           </div>
         </div>
       </div>
@@ -87,8 +133,11 @@ title: Fran Expósito
           </div>
           <div class="col-sm-5 col-xs-5 description-cont">
             <h4>Taggie</h4>
-            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
-            <a target="_blank" href="http://taggie.me">Web</a>
+            <p>La idea de Taggie era facilitar a la gente que visita los grupos de facebook de Españoles en... filtrando la
+              información por categorias (trabajo, habitaciones, informacion, etc). Mi parte del proyecto fue realizar toda la
+              parte backend y el panel para administrar cada entrada. Para ello utilicé PHP, Javascript y Graph API de Facebook
+              principalmente.</p>
+            <a target="_blank" href="https://github.com/franexposito/taggie-frontend">Github</a>
           </div>
         </div>
       </div>
@@ -100,25 +149,15 @@ title: Fran Expósito
           </div>
           <div class="col-sm-5 col-xs-5 description-cont">
             <h4>LinkBook</h4>
-            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
-            <a target="_blank" href="http://linkbook.mobi">Web</a>
+            <p>La idea de Taggie era facilitar a la gente que visita los grupos de facebook de Españoles en... filtrando la
+              información por categorias (trabajo, habitaciones, informacion, etc). Mi parte del proyecto fue realizar toda
+              la parte backend y el panel para administrar cada entrada. Para ello utilicé PHP, Javascript y Graph API de
+              Facebook principalmente.</p>
+            <a target="_blank" href="https://github.com/franexposito/linkbook">Github</a>
           </div>
         </div>
       </div>
 
-      <div id="exodo" class="col-sm-12 work">
-        <div class="row">
-          <div class="col-sm-7 col-xs-7 img-cont">
-            <img src="{{ ASSET_PATH }}/assets/themes/red-grey/images/exodo-p4.png" alt="" />
-          </div>
-          <div class="col-sm-5 col-xs-5 description-cont">
-            <h4>Exodo</h4>
-            <p>Magnis etiam nisi odio, aliquet, facilisis, tempor ridiculus pulvinar enim ut scelerisque scelerisque ac! Aliquet tincidunt et ut et, ac cum cursus ut sagittis odio, augue risus et odio pid, phasellus scelerisque auctor enim urna lectus, tincidunt dis ultrices ac!</p>
-            <a target="_blank" href="http://exo.do">Web</a>
-            <a target="_blank" href="http://github.com/exodo">GitHub</a>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 

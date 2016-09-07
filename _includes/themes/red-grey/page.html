@@ -1,4 +1,8 @@
-{% include themes/red-grey/nav.html %}
+{% if page.url != "/categories/" %}
+   {% include themes/red-grey/nav.html %}
+   {{ page.url }}
+{% endif %}
+
 
 <div class="col-sm-9 col-sm-offset-3 post-cont">
   <div class="page-header">
